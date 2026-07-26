@@ -48,10 +48,10 @@ export default function Contact() {
     status === 'sending' ? 'Sending…' : status === 'sent' ? 'Message sent ✓' : status === 'error' ? 'Something went wrong — try again' : 'Send message';
 
   return (
-    <section id="contact" style={{ padding: '110px 28px' }}>
+    <section id="contact" style={{ padding: '110px 28px', background: colors.secondaryBackground, }}>
       <div
         style={{
-          background: panelBg,
+          // background: colors.secondaryBackground,
           color: colors.paper === '#121016' ? '#F3F1F6' : '#FDFBF5',
           borderRadius: 24,
           padding: window.innerWidth > 900 ? '70px 50px' : '50px 26px',
